@@ -6,8 +6,6 @@ export class UserRepository implements IUserRepository {
 	async fetch(): Promise<UsersEntity[]> {
 		const db = await dataSource.initialize();
 
-		console.log(db);
-
 		try {
 			return await db.getRepository(UsersEntity).find();
 		} catch (error) {

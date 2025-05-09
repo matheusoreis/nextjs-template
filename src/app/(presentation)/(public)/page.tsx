@@ -1,6 +1,6 @@
 "use server";
 
-import { fetchUsersAction } from "../actions/fetch-users";
+import { fetchUsersAction } from "@/app/actions/fetch-users";
 import TesteComponente from "./teste";
 
 export default async function HomePage() {
